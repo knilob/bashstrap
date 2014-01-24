@@ -1,10 +1,20 @@
 [alias]
 	# TBC
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
 [core]
 	# Use custom `.gitignore`
 	excludesfile = ~/.gitignore
 	# Treat spaces before tabs, lines that are indented with 8 or more spaces, and all kinds of trailing whitespace as an error
 	whitespace = space-before-tab,indent-with-non-tab,trailing-space
+	autocrlf = input
+	safecrlf = true
+	editor = open -a 'Sublime Text 2'
 [color]
 	# Use colors in Git commands that are capable of colored output when outputting to the terminal
 	ui = auto
@@ -21,3 +31,6 @@
 	added = yellow
 	changed = green
 	untracked = cyan
+[user]
+	name = Bo Link
+	email = knilob@gmail.com
