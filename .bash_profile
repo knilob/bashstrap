@@ -109,4 +109,7 @@ export PS2="\[$ORANGE\]→ \[$RESET\]"
 export PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
 
 # init z! (https://github.com/rupa/z)
-. ~/Development/z/z.sh
+. ~/Development/dotfiles/z.sh
+
+# Set Homebrew Github API Token
+. ~/Development/settings/brewset.sh
