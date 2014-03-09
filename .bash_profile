@@ -1,11 +1,14 @@
 ### Paths
-export PATH="/usr/local/bin:$PATH:$HOME/bin:$HOME/Development/Android"
+export PATH="$(brew --prefix php55)/bin:$HOME/.rbenv/bin:/usr/local/bin:$PATH:$HOME/bin:$HOME/Development/Android"
+
+### Evals
+eval "$(rbenv init -)"
 
 ### Aliases
 
 # Open specified files in Sublime Text
 # "s ." will open the current directory in Sublime
-alias s='open -a "Sublime Text 2"'
+alias s='open -a "Sublime Text"'
 
 # Color LS
 colorflag="-G"
@@ -104,6 +107,9 @@ export PS2="\[$ORANGE\]→ \[$RESET\]"
 
 
 ### Misc
+
+# Specify Homebrew Cask defaults in this environment variable
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # Only show the current directory's name in the tab
 export PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
