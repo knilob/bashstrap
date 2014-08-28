@@ -36,3 +36,5 @@
 	email = knilob@gmail.com
 [github]
   user = knilob
+[credential]
+  help = osxkeychain
