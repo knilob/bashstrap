@@ -38,3 +38,4 @@
   user = knilob
 [credential]
   help = osxkeychain
+	helper = osxkeychain
