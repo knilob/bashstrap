@@ -8,7 +8,7 @@ eval "$(rbenv init -)"
 
 # Open specified files in Sublime Text
 # "s ." will open the current directory in Sublime
-alias s='open -a "Sublime Text"'
+alias s='open -a "/opt/homebrew-cask/Caskroom/sublime-text-dev/Build 3062/Sublime Text.app"'
 
 # Color LS
 colorflag="-G"
@@ -119,3 +119,6 @@ export PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
 
 # Set Homebrew Github API Token
 . ~/Development/settings/brewset.sh
+
+# Set SSH Aliases
+. ~/Development/settings/sshalias.sh
