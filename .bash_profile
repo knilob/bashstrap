@@ -14,7 +14,7 @@ alias s='open -a "/opt/homebrew-cask/Caskroom/sublime-text-dev/Build 3062/Sublim
 colorflag="-G"
 alias ls="command ls ${colorflag}"
 alias l="ls -lF ${colorflag}" # all files, in long format
-alias la="ls -laF ${colorflag}" # all files inc dotfiles, in long format
+alias la="ls -lahF ${colorflag}" # all files inc dotfiles, in long format
 alias lsd='ls -lF ${colorflag} | grep "^d"' # only directories
 
 # Quicker navigation
@@ -41,6 +41,8 @@ alias ga='git add .'
 alias gc='git commit -m' # requires you to type a commit message
 alias gp='git push'
 
+# GAM Alias
+alias gam='python ~/Development/gam/gam.py'
 
 ### Prompt Colors
 # Modified version of @gf3’s Sexy Bash Prompt
